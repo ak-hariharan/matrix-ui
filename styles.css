@@ -1,0 +1,32 @@
+.main{
+    text-align: center;
+}
+.labels-value{
+    display: block;
+}
+.input-values{
+    display: block;
+    margin: 10px auto;
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+    text-align: center;
+}
+.input-values::-webkit-outer-spin-button,
+.input-values::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.matrix, .table-values{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-values{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.matrix{
+    margin: 20px auto;
+}
