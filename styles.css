@@ -29,6 +29,7 @@
     grid-template-columns: repeat(3, 50px);
     margin: 0 auto;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .matrix-element {
@@ -36,39 +37,21 @@
     padding: 5px;
 }
 
-.matrix-element:nth-child(1),
-.matrix-element:nth-child(2),
-.matrix-element:nth-child(3),
-.matrix-element:nth-child(4),
-.matrix-element:nth-child(5),
-.matrix-element:nth-child(6),
-.matrix-element:nth-child(7),
-.matrix-element:nth-child(8),
-.matrix-element:nth-child(9)
- {
+.matrix-element:nth-child(n){
     border-top: none;
 }
-
-.matrix-element:nth-child(2),
-.matrix-element:nth-child(5),
-.matrix-element:nth-child(8) {
+.matrix-element:nth-child(3n + 2) {
     border-left: none;
     border-right: none;
 }
-.matrix-element:nth-child(7),
-.matrix-element:nth-child(9),
-.matrix-element:nth-child(8) {
+.matrix-element:nth-child(3n + 1){
+    border-left: none;
+}
+.matrix-element:nth-child(3n + 3){
+    border-right: none;
+}
+.matrix-element:nth-last-child(-n + 3) {
     border-bottom: none;
-}
-.matrix-element:nth-child(1),
-.matrix-element:nth-child(4),
-.matrix-element:nth-child(7) {
-    border-left: none;
-}
-.matrix-element:nth-child(3),
-.matrix-element:nth-child(6),
-.matrix-element:nth-child(9) {
-    border-right: none;
 }
 
 @media(min-width: 425px) {
