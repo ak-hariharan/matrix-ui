@@ -36,11 +36,47 @@
     padding: 5px;
 }
 
-@media(min-width: 425px){
-    .matrix{
+.matrix-element:nth-child(1),
+.matrix-element:nth-child(2),
+.matrix-element:nth-child(3),
+.matrix-element:nth-child(4),
+.matrix-element:nth-child(5),
+.matrix-element:nth-child(6),
+.matrix-element:nth-child(7),
+.matrix-element:nth-child(8),
+.matrix-element:nth-child(9)
+ {
+    border-top: none;
+}
+
+.matrix-element:nth-child(2),
+.matrix-element:nth-child(5),
+.matrix-element:nth-child(8) {
+    border-left: none;
+    border-right: none;
+}
+.matrix-element:nth-child(7),
+.matrix-element:nth-child(9),
+.matrix-element:nth-child(8) {
+    border-bottom: none;
+}
+.matrix-element:nth-child(1),
+.matrix-element:nth-child(4),
+.matrix-element:nth-child(7) {
+    border-left: none;
+}
+.matrix-element:nth-child(3),
+.matrix-element:nth-child(6),
+.matrix-element:nth-child(9) {
+    border-right: none;
+}
+
+@media(min-width: 425px) {
+    .matrix {
         grid-template-columns: repeat(3, 100px);
     }
 }
+
 @media(min-width: 768px) {
     .matrix {
         grid-template-columns: repeat(3, 150px);
