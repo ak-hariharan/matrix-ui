@@ -5,11 +5,11 @@
     text-align: center;
 }
 
-.labels-value {
+.label {
     display: block;
 }
 
-.input-values {
+.input {
     display: block;
     margin: 10px auto;
     width: 30px;
@@ -19,8 +19,8 @@
     text-align: center;
 }
 
-.input-values::-webkit-outer-spin-button,
-.input-values::-webkit-inner-spin-button {
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
     appearance: none;
 }
 
@@ -31,7 +31,7 @@
     border: 1px solid black;
 }
 
-.matrix-elements {
+.matrix-element {
     border: 1px solid black;
     padding: 5px;
 }
