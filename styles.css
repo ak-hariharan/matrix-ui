@@ -1,10 +1,15 @@
-.main{
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
-.labels-value{
+
+.labels-value {
     display: block;
 }
-.input-values{
+
+.input-values {
     display: block;
     margin: 10px auto;
     width: 30px;
@@ -13,20 +18,31 @@
     outline: 0;
     text-align: center;
 }
+
 .input-values::-webkit-outer-spin-button,
-.input-values::-webkit-inner-spin-button{
+.input-values::-webkit-inner-spin-button {
     appearance: none;
 }
 
-.matrix, .table-values{
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    margin: 0 auto;
     border: 1px solid black;
-    border-collapse: collapse;
 }
-.table-values{
-    width: 50px;
-    height: 30px;
-    cursor: pointer;
+
+.matrix-elements {
+    border: 1px solid black;
+    padding: 5px;
 }
-.matrix{
-    margin: 20px auto;
+
+@media(min-width: 425px){
+    .matrix{
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+@media(min-width: 768px) {
+    .matrix {
+        grid-template-columns: repeat(3, 150px);
+    }
 }
